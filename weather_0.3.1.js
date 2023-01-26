@@ -1,5 +1,5 @@
 /* weatherbit.io API key */
-const majosr_api_key = "53d08ae2788e4fed8b33c4ef3cbd2a48";  
+const majosr_api_key = "";  
 const majors = ["Sofia", "Burgas", "Varna", "Plovdiv", "Ruse"]
 /* minors */
 /*
@@ -10,7 +10,7 @@ const PP = "&sity=Razgrad,bg";
 const CC = "%city=Silistra,bg";
 */
 const minors = ["Pleven", "VelikoTarnovo", "Gabrovo", "Shumen", "Dobritch", "Targovishte", "Starazagora", "Kardzhali", "Blagoevgrad"];
-const minors_api_key = "d0a2fe0ba2204987a67fa5ccf74ef060";
+const minors_api_key = "";
 /*
 const OB = "&city=Lovetch,bg";
 const BT = "&city=VelikoTarnovo,bg";

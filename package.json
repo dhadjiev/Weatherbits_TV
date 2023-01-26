@@ -1,0 +1,27 @@
+{
+  "name": "skat_weather_cg",
+  "version": "0.2.3",
+  "description": "SKAT Weather CG",
+  "main": "index.js",
+  "dependencies": {
+    "@nexrender/action-copy": "^1.24.2",
+    "@nexrender/action-encode": "^1.26.3",
+    "@nexrender/action-upload": "^1.24.2",
+    "@nexrender/core": "^1.27.0",
+    "@nexrender/provider-ftp": "^1.26.1",
+    "@nexrender/provider-gs": "^1.24.2",
+    "@nexrender/provider-s3": "^1.25.1",
+    "express": "^4.17.1",
+    "node-windows": "^1.0.0-beta.5",
+    "request": "^2.88.2",
+    "request-promise": "^4.2.6",
+    "time-stamp": "^2.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+	"start": "node weather_0.2.3.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dimitar Hadjiev",
+  "license": "ISC"
+}

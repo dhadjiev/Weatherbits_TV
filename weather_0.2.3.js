@@ -1,5 +1,5 @@
 /* weatherbit.io API key */
-const majosr_api_key = "c051ac7e064b4865a49ae746357ee46b";  
+const majosr_api_key = "...";  
 const majors = ["Sofia", "Burgas", "Varna", "Plovdiv", "Ruse"]
 /* minors */
 /*
@@ -10,7 +10,7 @@ const PP = "&sity=Razgrad,bg";
 const CC = "%city=Silistra,bg";
 
 const minors = ["Pleven", "VelikoTarnovo", "Gabrovo", "Shumen", "Dobritch", "Targovishte", "Starazagora", "Kardzhali", "Blagoevgrad"];
-const minors_api_key = "3143a0af88a743909db9aed83cb0d92f";
+const minors_api_key = "...";
 
 const OB = "&city=Lovetch,bg";
 const BT = "&city=VelikoTarnovo,bg";
@@ -33,9 +33,9 @@ const { render } = require('@nexrender/core');
 const { randomInt } = require('crypto');
 const render_job = {
     "template": {
-        "src" : 'file:///C:/STATIC/WEATHER/template.aep',
-        "composition" : 'main_short',
-        "dest":"C:\\TEMP\\WEATHER\\template.aep"
+        "src" : '...',
+        "composition" : '...',
+        "dest":"..."
     },
     "actions": {
         "postrender": [
@@ -57,7 +57,7 @@ const render_job = {
             {
                 "module": "@nexrender/action-copy",
                 "input": 'foobar.mp4',
-                "output": 'Z:/000RABOTNA/ZA EFIR/vremeto.mp4'
+                "output": '...'
             }
         ]
     }
@@ -69,7 +69,7 @@ const render_job = {
 async function nexRndr() {
     try {
         const result = await render(render_job, {
-            workpath: 'C:/TEMP',
+            workpath: '...',
             skipCleanup: false,
             addLicense: false,
             debug: false
@@ -291,8 +291,8 @@ function getCurrentWeather(place,api_key) {
             weatherJSON = JSON.stringify(weatherObject);
             //return weatherJSON;
             //console.log(weatherJSON);
-            //fs.writeFileSync('C:/STATIC/WEATHER/DATA/CURRENT/' + weatherdata.city_name + '_data.json', dataJSON);
-            fs.writeFileSync('C:/STATIC/WEATHER/DATA/CURRENT/' + weatherdata.city_name + '.json', weatherJSON);
+            //fs.writeFileSync('../WEATHER/DATA/CURRENT/' + weatherdata.city_name + '_data.json', dataJSON);
+            fs.writeFileSync('../WEATHER/DATA/CURRENT/' + weatherdata.city_name + '.json', weatherJSON);
             console.log(timestamp('DD/MM/YYYY | HH:mm:ss') + " Weather for " + weatherdata.city_name + " updated.");
             //setTimeout(function(){},10000);
             return 1;            
@@ -353,16 +353,3 @@ setInterval( function() {
     getCurrentWeather(majors, majosr_api_key);
     getCurrentWeather(minors, minors_api_key);
 }, 900000);
-
-
-
-
-
-
-/*
-fs.writeFile('Z:/VREMETO/new_forecast/majors.json', getCurrentWeather(majors) , err =>{
-    if (err) {
-        return console.error(err);
-    }
-});
-*/
